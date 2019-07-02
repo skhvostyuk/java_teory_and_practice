@@ -1,1 +1,1 @@
-# leetcode_java
+# Algorithmic tasks from the leetcode.
