@@ -3,7 +3,7 @@ package array;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class SearchInsertPosition_35 {
+public class Task35_SearchInsertPosition {
     public static int searchInsert(int[] nums, int target) {
         int low = 0;
         int high = nums.length-1;

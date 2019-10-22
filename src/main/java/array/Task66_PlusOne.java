@@ -2,7 +2,7 @@ package array;
 
 import java.util.Arrays;
 
-public class PlusOne_66 {
+public class Task66_PlusOne {
 
     public static int[] plusOne(int[] digits) {
         if (digits.length == 1) {

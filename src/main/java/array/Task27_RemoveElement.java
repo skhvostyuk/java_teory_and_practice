@@ -2,7 +2,7 @@ package array;
 
 import java.util.Arrays;
 
-public class RemoveElement_27 {
+public class Task27_RemoveElement {
     public static int removeElement(int[] nums, int val) {
         int ret = 0;
 

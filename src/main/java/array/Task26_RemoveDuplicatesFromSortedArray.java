@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
  */
 
-public class RemoveDuplicatesFromSortedArray_26 {
+public class Task26_RemoveDuplicatesFromSortedArray {
     public static int removeDuplicates(int[] nums) {
         if (nums.length < 1)
             return 0;
