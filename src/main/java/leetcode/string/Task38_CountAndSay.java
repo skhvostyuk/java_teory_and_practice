@@ -1,8 +1,4 @@
-package string;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package leetcode.string;
 
 public class Task38_CountAndSay {
 

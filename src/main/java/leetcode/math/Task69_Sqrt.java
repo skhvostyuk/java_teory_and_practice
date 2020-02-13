@@ -1,4 +1,4 @@
-package math;
+package leetcode.math;
 
 public class Task69_Sqrt {
 

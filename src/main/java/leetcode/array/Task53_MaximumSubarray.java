@@ -1,7 +1,7 @@
-package array;
+package leetcode.array;
 
 /*
- * Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+ * Given an integer leetcode.array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
  */
 public class Task53_MaximumSubarray {
     public static int maxSubArray(int[] nums) {

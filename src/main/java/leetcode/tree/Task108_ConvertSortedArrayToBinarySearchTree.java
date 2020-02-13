@@ -1,4 +1,4 @@
-package tree;
+package leetcode.tree;
 
 public class Task108_ConvertSortedArrayToBinarySearchTree {
 

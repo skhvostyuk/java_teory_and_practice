@@ -1,4 +1,4 @@
-package dynamic_programming;
+package leetcode.dynamic_programming;
 
 public class Task70_ClimbingStairs {
     public static int climbStairs(int n) {

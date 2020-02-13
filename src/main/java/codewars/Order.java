@@ -29,6 +29,6 @@ public class Order {
 
    // @Test
     public void test3() {
-        assertThat("Empty input should return empty string", Order.order(""), equalTo(""));
+        assertThat("Empty input should return empty leetcode.string", Order.order(""), equalTo(""));
     }
 }

@@ -1,4 +1,4 @@
-package linked_list;
+package leetcode.linked_list;
 
 public class Task2_AddTwoNumbers {
 

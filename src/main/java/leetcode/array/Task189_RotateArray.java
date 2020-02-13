@@ -1,9 +1,9 @@
-package array;
+package leetcode.array;
 
 import java.util.Arrays;
 
 /*
- * Given an array, rotate the array to the right by k steps, where k is non-negative.
+ * Given an leetcode.array, rotate the leetcode.array to the right by k steps, where k is non-negative.
  */
 public class Task189_RotateArray {
 

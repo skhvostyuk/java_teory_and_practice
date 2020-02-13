@@ -1,7 +1,6 @@
-package array;
+package leetcode.array;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 public class Task35_SearchInsertPosition {
     public static int searchInsert(int[] nums, int target) {
