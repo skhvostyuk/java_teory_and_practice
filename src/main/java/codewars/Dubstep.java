@@ -9,8 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class Dubstep {
 
-    public static String SongDecoder (String song)
-    {
+    public static String SongDecoder (String song) {
         return Arrays.stream(song.split("WUB")).filter(word -> !"".equals(word)).collect(Collectors.joining(" "));
     }
 
