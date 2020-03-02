@@ -2,23 +2,16 @@ package codewars;
 
 import org.junit.Test;
 
-import javax.sound.sampled.Line;
-
 import static org.junit.Assert.assertEquals;
 
 public class DoubleCola {
 
     public static String WhoIsNext(String[] names, int n) {
         int N = names.length;
-
         int i;
-        for (i = 1; n / sum(N, i) > 0; i++);
-        System.out.println("i: " + i);
-        System.out.println("Sum: " + sum(N, i));
+        for (i = 1; n / sum(N, i) > 0; i++) ;
 
-        System.out.println("n: " + n);
-        int index = (n - sum(N, i-1))/i;
-        System.out.println("index: " + index);
+        int index = new Double(Math.ceil((double) (n - sum(N, i - 1)) / Math.pow(2, i - 1))).intValue() - 1;
 
         return names[index];
     }
@@ -30,17 +23,72 @@ public class DoubleCola {
     }
 
 
+    public static String smartWhoIsNext(String[] names, int n){
+        while ( n > names.length){
+            n = (n - (names.length - 1)) / 2;
+        }
+        return names[n-1];
+    }
+
     @Test
     public void test1() {
         String[] names = new String[]{"Sheldon", "Leonard", "Penny", "Rajesh", "Howard"};
         int n = 1;
-        assertEquals("Sheldon", DoubleCola.WhoIsNext(names, n));
+        int expIndex = 0;
+
+        System.out.println("n: " + n);
+        System.out.println("expIndex: " + expIndex);
+
+        assertEquals(names[expIndex], DoubleCola.WhoIsNext(names, n));
+
+
     }
 
     @Test
     public void test2() {
         String[] names = new String[]{"Sheldon", "Leonard", "Penny", "Rajesh", "Howard"};
         int n = 6;
-        assertEquals("Sheldon", DoubleCola.WhoIsNext(names, n));
+        int expIndex = 0;
+
+        System.out.println("n: " + n);
+        System.out.println("expIndex: " + expIndex);
+
+        assertEquals(names[expIndex], DoubleCola.WhoIsNext(names, n));
+    }
+
+    @Test
+    public void test3() {
+        String[] names = new String[]{"Sheldon", "Leonard", "Penny", "Rajesh", "Howard"};
+        int n = 21;
+        int expIndex = 1;
+
+        System.out.println("n: " + n);
+        System.out.println("expIndex: " + expIndex);
+
+        assertEquals(names[expIndex], DoubleCola.WhoIsNext(names, n));
+    }
+
+    @Test
+    public void test4() {
+        String[] names = new String[]{"Sheldon", "Leonard", "Penny", "Rajesh", "Howard"};
+        int n = 3;
+        int expIndex = 2;
+
+        System.out.println("n: " + n);
+        System.out.println("expIndex: " + expIndex);
+
+        assertEquals(names[expIndex], DoubleCola.WhoIsNext(names, n));
+    }
+
+    @Test
+    public void test5() {
+        String[] names = new String[]{"Sheldon", "Leonard", "Penny", "Rajesh", "Howard"};
+        int n = 63;
+        int expIndex = 3;
+
+        System.out.println("n: " + n);
+        System.out.println("expIndex: " + expIndex);
+
+        assertEquals(names[expIndex], DoubleCola.WhoIsNext(names, n));
     }
 }

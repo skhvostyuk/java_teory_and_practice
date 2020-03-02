@@ -2,13 +2,20 @@ package codewars;
 
 import org.junit.Test;
 
+import static java.lang.Math.*;
 import static org.junit.Assert.assertArrayEquals;
 
 public class ProdFib {
 
     public static long[] productFib(long prod) {
-        // your code
-        return null;
+        long a = 0L;
+        long b = 1L;
+        while (a * b < prod) {
+            long tmp = a;
+            a = b;
+            b = tmp + b;
+        }
+        return new long[] { a, b, a * b == prod ? 1 : 0 };
     }
 
     @Test
