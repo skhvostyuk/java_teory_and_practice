@@ -1,5 +1,7 @@
 package leetcode.linked_list;
 
+import leetcode.array.ListNode;
+
 public class Task2_AddTwoNumbers {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -39,14 +41,5 @@ public class Task2_AddTwoNumbers {
         }
 
         return ret;
-    }
-
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }
