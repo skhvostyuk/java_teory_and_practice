@@ -1,6 +1,5 @@
 package codewars;
 
-import com.sun.deploy.cache.BaseLocalApplicationProperties;
 
 public class DecodeTheMorseCode {
 
